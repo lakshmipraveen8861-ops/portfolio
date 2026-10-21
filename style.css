@@ -264,58 +264,59 @@ footer {
     font-size: 13px;
 }
 
-/* Portfolio screenshot gallery */
+/* Screenshot gallery */
 
 .screenshot-gallery {
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
 }
 
 .gallery-intro {
-    margin: 12px 0 30px;
+    margin: 12px 0 20px;
     color: #77718b;
 }
 
 .screenshot-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-    max-width: 850px;
-    margin: 30px auto 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 650px;
+    margin: 20px auto 0;
     text-align: left;
 }
 
 .screenshot-grid a {
     display: block;
-    padding: 10px;
+    padding: 6px;
     overflow: hidden;
-    border: 1px solid #e8e3f5;
-    border-radius: 12px;
-    background: #fff;
+    border: 1px solid #eeeaf5;
+    border-radius: 8px;
+    background: #ffffff;
     color: #29243f;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .screenshot-grid a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(80, 55, 140, 0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(80, 55, 140, 0.12);
 }
 
 .screenshot-grid img {
     display: block;
     width: 100%;
-    height: 140px;
+    height: 75px;
     object-fit: contain;
     background: #f7f5fc;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .screenshot-grid span {
     display: block;
-    padding: 10px 4px 2px;
-    font-size: 13px;
-    font-weight: 600;
+    padding: 5px 2px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
 }
 
 @media (max-width: 650px) {
@@ -351,20 +352,20 @@ footer {
     }
 
     .screenshot-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
     }
 
     .screenshot-grid a {
-        padding: 6px;
+        padding: 4px;
     }
 
     .screenshot-grid img {
-        height: 110px;
+        height: 55px;
     }
 
     .screenshot-grid span {
-        font-size: 11px;
-        padding: 7px 2px 2px;
+        font-size: 9px;
+        padding: 4px 1px;
     }
 }
